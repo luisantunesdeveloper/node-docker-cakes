@@ -9,6 +9,8 @@ Start the services
 
 `./start.sh`
 
+and then go to http://localhost:8888/cakes
+
 You may have to give execution permissions on the file first
 
 `chmod u+x start.sh`
