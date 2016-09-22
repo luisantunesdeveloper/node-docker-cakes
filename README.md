@@ -1,25 +1,30 @@
 node-docker-cakes
 =================
 
-start the services
+Be advised, this project runs better on node 6 and beyond
+---------------------------------------------------------
+
+Start the services
 ------------------
 
 `./start.sh`
 
-you may have to give execution permissions on the file first
+You may have to give execution permissions on the file first
 
 `chmod u+x start.sh`
 
-unit tests on the cake service
+Unit tests on the cake service
 ------------------------------
 
-don't forget to change to the cake service directory
+Don't forget to change to the cake service directory and install the node dependencies. Do check the node version you are using.
 
 `npm run test`
 
-integration tests on the cake service
+Integration tests on the cake service
 -------------------------------------
 
-don't forget to change to the cake service integration tests directory
+Don't forget to change to the cake service integration tests directory and install node dependencies. Do check the node version you are using.
 
 `npm start`
+
+### To shutdown docker `ctrl+c`. Don't force the shutdown or you may find some troubles like ports left open.
