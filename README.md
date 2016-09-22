@@ -1,11 +1,15 @@
 node-docker-cakes
 =================
 
-Be advised, this project runs better on node 6 and beyond
----------------------------------------------------------
+#### Be advised, this project runs better on node 6 and beyond!
 
-Start the services
-------------------
+Description
+-----------
+
+The project is a proof of concept for docker, docker-compose and a micro service using node js. It has two containers, one for the micro service and another for the mysql database.
+
+Start
+-----
 
 `./start.sh`
 
@@ -15,15 +19,15 @@ You may have to give execution permissions on the file first
 
 `chmod u+x start.sh`
 
-Unit tests on the cake service
-------------------------------
+Unit tests
+----------
 
 Don't forget to change to the cake service directory and install the node dependencies. Do check the node version you are using.
 
 `npm run test`
 
-Integration tests on the cake service
--------------------------------------
+Integration tests
+-----------------
 
 Don't forget to change to the cake service integration tests directory and install node dependencies. Do check the node version you are using.
 
