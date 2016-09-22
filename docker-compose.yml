@@ -1,0 +1,12 @@
+version: '2'
+services:
+  cake-service:
+    build: ./cake-service
+    ports:
+     - "8888:8888"
+    depends_on:
+     - db
+    environment:
+     - DB_HOST=db
+  db:
+    build: ./test-db

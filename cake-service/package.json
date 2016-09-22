@@ -1,0 +1,40 @@
+{
+  "name": "CakeService",
+  "version": "1.0.0",
+  "description": "Service to get cakes.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luisantunesdeveloper/node-docker-cakes.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha -R spec **/*.spec.js",
+    "debug": "node-debug index.js",
+    "lint": "eslint ."
+  },
+  "author": "Luis Antunes, luisantunes.developer@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "mysql": "^2.10.2"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "mocha": "^2.4.5",
+    "node-inspector": "^0.12.7",
+    "should": "^8.3.0",
+    "sinon": "^1.17.6",
+    "supertest": "^1.2.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": 2
+    }
+  }
+}
