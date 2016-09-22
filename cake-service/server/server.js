@@ -2,6 +2,7 @@
 
 var express = require('express');
 var morgan = require('morgan');
+var helmet = require('helmet')
 
 module.exports.start = (config) => {
     return new Promise((resolve, reject) => {
@@ -15,6 +16,8 @@ module.exports.start = (config) => {
         //the app
         var app = express();
         app.use(morgan('dev'));
+        //Help secure Express apps with various HTTP headers
+        app.use(helmet())
 
         //the api
         require('../api/cakes')(app, config);
